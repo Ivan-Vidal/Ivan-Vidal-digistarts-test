@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 64px;
+}
+
+
+.header a {
+    text-decoration: none;
+   display: flex;
+    color: #14360d;
+    padding-left: 40px;
+}
+ .nome{
+     font-size: 1rem;
+   
+ }
+.header i {
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header span {
+    align-items: center;
+ 
+
+}
+.header span img {
+    align-items: center;
+    height: 20px;
+}
+
+
+@media(min-width: 700px){
+    .header span img{
+        height: 2rem;
+    }
+
+}

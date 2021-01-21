@@ -1,0 +1,56 @@
+.container{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title{
+    line-height: 1.5;
+    font-size:2rem;
+    color:#14360d;
+}
+
+.sub-title{
+    margin-top: 40px;
+    color: #3c8f2b;
+    font-size: 1.9rem;
+}
+.main{
+    margin-left: 66px;
+}
+
+.text{
+    text-align: center;
+    color: #0e1f0a;
+    font-size: 1.1rem;
+}
+.voltar{
+    font-size: 1.1rem;
+    padding: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: ease-in .3s all;
+    cursor: pointer;
+    background-color: #13360b;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 220px;
+    margin-top: 90px;
+}
+.voltar:hover{
+    background-color: #2a8116;
+    color: white;
+}
+
+
+@media(min-width:700px){
+    .title{
+        font-size:3rem;
+    }
+    .sub-title{
+        font-size:2rem;
+    }
+
+}

@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Digite um número</h1>
+
+    <form  class="forms" action="" [formGroup]="loginForm">
+  
+      <input type="number" formControlName="number" required />
+  
+  
+      <button class="ver" type="button"  (click)="addOrRemove($event)">Verificar</button>
+  
+      <div class="main">
+              <ul>
+            <li   class="item-list"  *ngFor="let _ of this.loginForm.value.num; index as i">
+                <div class="conteudo">
+                    <p>
+                        {{ _ }} 
+                    </p>
+                </div>
+               <div class="remover">
+                <button class="rem" type="button" (click)="addOrRemove($event, i)">remover</button>
+
+               </div>
+                
+              </li>
+        </ul>
+      </div>
+    </form>
+        </div>
