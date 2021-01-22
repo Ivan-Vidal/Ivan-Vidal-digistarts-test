@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
     
     });
 
-    list = list.sort((a,b)=> b - a)
+    list = list.sort((a,b)=> a - b)
 
    console.log(list)
    
@@ -53,6 +53,6 @@ export class HomeComponent implements OnInit {
       this.loginForm.patchValue({ num: list, number:''});
     }
 
-    list = list.sort()
+    list = list.sort((a,b)=> a - b)
 }
 }
