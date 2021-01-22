@@ -29,12 +29,14 @@
     color: white;
     transition: all .3s ease-in;
     cursor: pointer;
+    outline: none;
 }
 
 .ver:hover{
     background: rgb(4, 77, 20);
 }
 input {
+    outline: none;
     padding: 12px;
     border-radius: 5px 0 0 5px;
     border-right: none;
@@ -57,11 +59,12 @@ ul{
     display: flex;
     align-items: center;
     margin-top: 30px;
+    padding: 12px;
 }
 .rem{
     border: none;
     border-radius: 5px;
-    margin-left: 60px;
+    margin-left: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: red;

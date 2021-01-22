@@ -7,9 +7,21 @@
     font-size: 1.1rem;
 }
 
+h1{
+    font-size: 2rem;
+color: rgb(13, 68, 36);
+margin-bottom: 40px;
+}
+.nome{
+    font-size: 1.8rem;
+}
+
+
+
 .forms{
     align-items: center;
-    width: 400px;
+    width: 100%;
+    max-width: 500px;
     padding-right: 18px;
     margin-left: 67px;
     padding-left: 20px;

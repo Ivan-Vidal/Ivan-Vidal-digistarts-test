@@ -21,8 +21,11 @@ export class HomeComponent implements OnInit {
   })
 }
 
+
+
   addOrRemove(e, index = 'false') {
     e.preventDefault();
+   
 
     let numero = this.loginForm.controls.number.value;
     let lista  = this.loginForm.controls.num.value;
@@ -32,10 +35,12 @@ export class HomeComponent implements OnInit {
     console.log(lista);
 
     let list = lista.filter((elem, i, self) => {
-    return  i === self.indexOf(elem) });
-    list = list.sort()
-  
- 
+      
+      return  i === self.indexOf(elem) 
+    
+    });
+
+    list = list.sort((a,b)=> b - a)
 
    console.log(list)
    
@@ -47,5 +52,7 @@ export class HomeComponent implements OnInit {
       list.push(numero);
       this.loginForm.patchValue({ num: list, number:''});
     }
+
+    list = list.sort()
 }
 }

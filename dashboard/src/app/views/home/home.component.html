@@ -3,7 +3,7 @@
 
     <form  class="forms" action="" [formGroup]="loginForm">
   
-      <input type="number" formControlName="number" required />
+      <input type="number"  pattern="[0-9]+([\,|\.][0-9]+)?" step="1" formControlName="number" required />
   
   
       <button class="ver" type="button"  (click)="addOrRemove($event)">Verificar</button>
@@ -13,7 +13,7 @@
             <li   class="item-list"  *ngFor="let _ of this.loginForm.value.num; index as i">
                 <div class="conteudo">
                     <p>
-                        {{ _ }} 
+                        {{ _ | number: '1.0-0' }} 
                     </p>
                 </div>
                <div class="remover">
